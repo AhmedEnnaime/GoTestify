@@ -33,7 +33,6 @@ func SetupServer() {
 
 	configs := config.GetConfig()
 	db := config.ConnectDB(configs)
-	panic("all good")
 
 	repos := SetupRepositories(db)
 	uscs := SetupUsecases(repos)
