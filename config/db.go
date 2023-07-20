@@ -23,7 +23,7 @@ func getDBConnection(config *entities.Config) *sqlx.DB {
 		config.Database.Host,
 		config.Database.Port,
 		config.Database.DbName,
-		config.Database.DbName,
+		config.Database.Username,
 		config.Database.Password,
 	)
 
